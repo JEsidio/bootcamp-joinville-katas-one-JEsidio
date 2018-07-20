@@ -19,7 +19,18 @@
 function imprimirXadrez(size) {
   var board = "";
 
-  // IMPLEMENTE
+  var size = size;
+
+  for (var y = 0; y < size; y++) {
+    for (var x = 0; x < size; x++) {
+      if ((x + y) % 2 == 0) {
+        board += "_";
+      } else {
+        board += "#";
+      }
+    }
+    board += "\n";
+  }
 
   console.log(board);
 }

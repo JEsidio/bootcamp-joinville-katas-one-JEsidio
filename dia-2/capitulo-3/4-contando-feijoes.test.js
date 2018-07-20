@@ -27,15 +27,26 @@
 // Certifique-se de usar e criar variáveis locais à função, utilizando a palavra-chave var.
 
 function countChar(string, ch) {
-  let counted = 0;
-
-  // IMPLEMENTE
-
+  var counted = 0;
+  for (var i = 0; i < string.length; i++) {
+    if (string[i] == ch) {
+      counted += 1;
+    }
+  }
   return counted;
 }
 
 function countBs(string) {
-  // IMPLEMENTE
+  var counted = 0;
+  for (var i = 0; i < string.length; i++){
+    if (string.charAt(i) == "B"){
+      counted += 1;
+    }
+  }
+
+  return counted;
+
+  //return countChar(string, "B");
 }
 
 // TESTES

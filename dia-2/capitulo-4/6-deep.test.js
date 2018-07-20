@@ -1,7 +1,28 @@
 // DESCRIÇÃO: http://braziljs.github.io/eloquente-javascript/chapters/estrutura-de-dados/#deep-comparison
 
 function deepEqual(a, b) {
-  // IMPLEMENTE
+  if (a === b){
+    return true;
+  } 
+  
+  if (a == null || typeof a != "object" ||
+      b == null || typeof b != "object") {
+        return false;
+      }
+
+  var keysA = Object.keys(a), keysB = Object.keys(b);
+
+  if (keysA.length != keysB.length) {
+    return false;
+  } 
+
+  for (var key of keysA) {
+    if (!keysB.includes(key) || !deepEqual(a[key], b[key])) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
 // TESTES

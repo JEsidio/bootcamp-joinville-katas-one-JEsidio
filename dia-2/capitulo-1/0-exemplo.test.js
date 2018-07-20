@@ -1,5 +1,5 @@
 function sempreUm(x) {
-  return 1;
+  return x;
 }
 
 // REVISAR
@@ -18,7 +18,7 @@ describe("aprendendo a escrever testes com jest, sempreUm", function () {
 });
 
 function hello(name) {
-  // IMPLEMENTE
+  return "Hello, " + name + "!"
 }
 
 describe("hello", function () {

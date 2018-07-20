@@ -8,7 +8,7 @@
 // // → -10
 
 function min(a, b) {
-  // IMPLEMENTE
+  return Math.min(a, b);
 }
 
 // TESTES

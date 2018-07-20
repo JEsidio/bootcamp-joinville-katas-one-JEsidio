@@ -1,0 +1,52 @@
+* {
+	font-family: Times
+}
+
+body {
+	border-style: solid; 
+	border-width: 5px;
+	margin: 2px;
+}
+
+h1 {
+	margin: 0px;
+	margin-left: 5px;
+}
+
+h2 {
+	margin: 0px;
+	margin-left: 5px;
+}
+
+ul {
+	margin: 0px;
+	margin-left: 10px;
+}
+
+li {
+	margin: 0px;
+	font-size: 15px;
+}
+
+p{
+	margin-top: 0px;
+	margin-left: 8px;
+	font-size: 15px;
+}
+
+#imagem {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	border-radius: 8px;
+	max-width: 25%;
+    height: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+#imagem:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

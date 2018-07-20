@@ -1,7 +1,9 @@
 describe("Funções", function () {
   it("Implemente uma função chamada add que recebe dois parâmtros e retorna a soma deles", function () {
 
-    // IMPLEMENTE
+    function add(a, b){
+      return a + b;
+    }
 
     expect(add(1, 2)).toEqual(3);
   });
@@ -18,7 +20,7 @@ describe("Funções", function () {
       }
       valor = x + z
 
-      var RESPOSTA = // RESPOSTA
+      var RESPOSTA = 40;
       expect(valor).toEqual(RESPOSTA)
     })
 
@@ -30,7 +32,7 @@ describe("Funções", function () {
 
       var n = 10
 
-      var RESPOSTA = // RESPOSTA
+      var RESPOSTA = 50;
       expect(halve(100)).toEqual(RESPOSTA)
     })
   })

@@ -3,7 +3,9 @@
 function arrayToList(array) {
   var list = null;
 
-  // IMPLEMEMNTE
+  for (var i = array.length - 1; i >= 0; i--) {
+    list = {value: array[i], rest: list};
+  }
 
   return list;
 }
@@ -11,17 +13,26 @@ function arrayToList(array) {
 function listToArray(list) {
   var array = [];
 
-  // IMPLEMEMNTE
-
+  for (var node = list; node; node = node.rest) {
+    array.push(node.value);
+  }
   return array;
 }
 
 function prepend(value, list) {
-  // IMPLEMEMNTE
+  return {value, rest: list};
 }
 
 function nth(list, n) {
-  // IMPLEMEMNTE
+  if (!list) {
+    return undefined;
+
+  }else if (n == 0) {
+    return list.value;
+  
+  }else {
+    return nth(list.rest, n - 1);
+  }
 }
 
 // TESTES
